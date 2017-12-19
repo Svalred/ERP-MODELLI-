@@ -15,7 +15,7 @@ public class SupplierDaoImpl extends BaseDaoImpl<SupplierModel> implements Suppl
 	public void doQbc(DetachedCriteria dc,BaseQueryModel qm){
 		SupplierQueryModel sqm = (SupplierQueryModel) qm;
 		
-		if(sqm.getName()!=null && sqm.getName().trim().length()>0){
+		/*if(sqm.getName()!=null && sqm.getName().trim().length()>0){
 			dc.add(Restrictions.like("name", "%"+sqm.getName().trim()+"%"));
 		}
 		if(sqm.getContact()!=null && sqm.getContact().trim().length()>0){
@@ -27,10 +27,11 @@ public class SupplierDaoImpl extends BaseDaoImpl<SupplierModel> implements Suppl
 		if(sqm.getNeeds()!=null && sqm.getNeeds()!= -1){
 			dc.add(Restrictions.eq("needs", sqm.getNeeds()));
 		}
+		*/
 	}
 
 	public List<SupplierModel> getAllUnion() {
-		//获取所有与商品类别具有关联数据的供应商信息
+		//èŽ·å�–æ‰€æœ‰ä¸Žå•†å“�ç±»åˆ«å…·æœ‰å…³è�”æ•°æ�®çš„ä¾›åº”å•†ä¿¡æ�¯
 		String hql = "select distinct sm from SupplierModel sm join sm.gtms";
 		return this.getHibernateTemplate().find(hql);
 	}
