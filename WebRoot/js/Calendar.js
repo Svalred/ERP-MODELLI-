@@ -1,4 +1,4 @@
-﻿function Calendar(objName){		
+function Calendar(objName){		
 this.style = {
 borderColor       		: "#909eff", //边框颜色
 headerBackColor    		: "#97d645", //表头背景颜色909EFF
@@ -11,13 +11,15 @@ bodyHolidayFontColor    : "#ff0000", //假日字体色
 watermarkColor 		    : "#888888", //背景水印色
 moreDayColor            : "#cccccc" 
 };
-this.showMoreDay = true; //是否显示上月和下月的日期
+/*this.showMoreDay = true; //是否显示上月和下月的日期
 this.Obj = objName;		
 this.date = null;
 this.mouseOffset = null;
 this.dateInput = null;
 this.timer = null;	
+*/
 };
+
 Calendar.prototype.toString = function()
 {   
 var str = this.getStyle();
