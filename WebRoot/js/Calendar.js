@@ -1,5 +1,5 @@
 function Calendar(objName){		
-/*this.style = {
+this.style = {
 borderColor       		: "#909eff", //边框颜色
 headerBackColor    		: "#97d645", //表头背景颜色909EFF
 headerFontColor    		: "#ffffff", //表头字体颜色
@@ -18,7 +18,7 @@ this.date = null;
 this.mouseOffset = null;
 this.dateInput = null;
 this.timer = null;	
-*/
+
 };
 
 Calendar.prototype.toString = function()
@@ -194,9 +194,26 @@ var _year = _date.getFullYear();
 var _month = _date.getMonth();
 var _day = 1;	
 var _startDay = new Date(_year,_month,1).getDay();
-var _previYear = _month == 0 ? _year - 1 : _year;
-var _previMonth = _month == 0 ? 11 : _month - 1;
+
+var _previYear;
+
+	if(_month==0){
+	_previYear=_year-1
+	}else{
+		_previYear=_year;
+	}
+
+var _previMonth;
+
+if(_month==0){
+	_previMonth=11
+	}else{
+		_previMonth=_month-1;
+	}
+
+
 var _previDay = _monthDays[_previMonth];
+
 if (_previMonth == 1) _previDay =((_previYear%4==0)&&(_previYear%100!=0)||(_previYear%400==0))?29:28;	
 _previDay -= _startDay - 1;
 var _nextDay = 1;
