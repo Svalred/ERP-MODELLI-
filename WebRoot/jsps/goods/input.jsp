@@ -19,8 +19,8 @@
 				$("#goodsType").empty();
 				for(var i = 0;i<data.gtList.length;i++){
 					var goodsType = data.gtList[i];
-					var $option = $("<option value='"+goodsType.uuid+"'>"+goodsType.goodsTypeName+"</option>");	//创建option对象(jQuery格式)
-					$("#goodsType").append($option);				//将option对象添加到select组件中
+					var $option = $("<option value='"+goodsType.uuid+"'>"+goodsType.goodsTypeName+"</option>");	//??option??(jQuery??)
+					$("#goodsType").append($option);				//?option?????select???
 				}
 			});
 		});
@@ -29,7 +29,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">商品管理</span>
+			<span class="page_title">????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -43,32 +43,34 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">供&nbsp;应&nbsp;商</td>
+				      <td width="18%" height="30" align="center">?&nbsp;?&nbsp;?</td>
 				      <td width="32%">
-				      		<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">七匹狼</option>
-								<option value="2">康师傅</option>
-							</select>
+				      	<optimyth:textOptionsList
+					      	style="width:"190px"
+							value="-1"
+							value="1"
+							value="2"
+						/>
 				      </td>
-				      <td width="18%"align="center">商品类别</td>
+				      <td width="18%"align="center">????</td>
 				      <td width="32%">
-				      		<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">西服</option>
-								<option value="2">夹克</option>
-							</select>
+				      	<optimyth:textOptionsList
+					      	style="width:"190px"
+							value="-1"
+							value="1"
+							value="2"
+						/>
 					  </td>
 				    </tr>
 				    <tr bgcolor="#FFFFFF">
 					  <td colspan="4">&nbsp;</td>
 					</tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td align="center">商品名称</td>
+				      <td align="center">????</td>
 				      <td>
 				      	<input type="text" size="25"/>
 				      </td>
-				      <td  align="center">产&nbsp;&nbsp;&nbsp;&nbsp;地</td>
+				      <td  align="center">?&nbsp;&nbsp;&nbsp;&nbsp;?</td>
 				      <td >
 				      	<input type="text" size="25"/>
 				      </td>
@@ -77,10 +79,10 @@
 					  <td colspan="4">&nbsp;</td>
 					</tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td height="30" align="center">生产厂家</td>
+				      <td height="30" align="center">????</td>
 				      <td>
 				      	<input type="text" size="25"/>
-				      <td align="center">单&nbsp;&nbsp;&nbsp;&nbsp;位</td>
+				      <td align="center">?&nbsp;&nbsp;&nbsp;&nbsp;?</td>
 				      <td>
 				      	<input type="text" size="25"/>
 					  </td>
@@ -89,11 +91,11 @@
 					  <td colspan="4">&nbsp;</td>
 					</tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td height="30" align="center">进货单价</td>
+				      <td height="30" align="center">????</td>
 				      <td>
 				      	<input type="text" size="25"/>
 					  </td>
-				      <td align="center">销售单价</td>
+				      <td align="center">????</td>
 				      <td>
 				      	<input type="text" size="25"/>
 					  </td>
@@ -102,7 +104,7 @@
 					  <td colspan="4">&nbsp;</td>
 					</tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td height="30" align="center">体&nbsp;&nbsp;&nbsp;&nbsp;积</td>
+				      <td height="30" align="center">?&nbsp;&nbsp;&nbsp;&nbsp;?</td>
 				      <td>
 				      	<input type="text" size="25"/>
 					  </td>
