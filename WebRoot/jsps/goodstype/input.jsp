@@ -5,7 +5,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">商品类别管理</span>
+			<span class="page_title">??????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -19,20 +19,23 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">供应商</td>
+				      <td width="18%" height="30" align="center">???</td>
 				      <td width="82%" colspan="3">
-				      		<select class="kuan" style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">七匹狼</option>
-								<option value="2">康师傅</option>
-							</select>
+				      		<optimyth:textOptionsList
+					      	class="kuan" style="width:190px"
+					      	style="width:"190px"
+							value="-1"
+							value="1"
+							value="2"
+						/>
+							
 				      </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">商品类别名称</td>
+				      <td width="18%" height="30" align="center">??????</td>
 				      <td width="82%" colspan="3">
 				      	<input type="text" size="25"/>
 				      </td>
