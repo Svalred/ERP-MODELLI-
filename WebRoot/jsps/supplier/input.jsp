@@ -5,7 +5,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">供应商管理</span>
+			<span class="page_title">?????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -19,7 +19,7 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">供应商名称</td>
+				      <td width="18%" height="30" align="center">?????</td>
 				      <td width="82%" colspan="3">
 				      	<input type="text" size="82"/>
 				      </td>
@@ -28,7 +28,7 @@
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">供应商地址</td>
+				      <td width="18%" height="30" align="center">?????</td>
 				      <td width="82%" colspan="3">
 				      	<input type="text" size="82"/>
 				      </td>
@@ -37,11 +37,11 @@
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">联系人</td>
+				      <td width="18%" height="30" align="center">???</td>
 				      <td width="32%">
 				      	<input type="text" size="25"/>
 				      </td>
-				      <td width="18%" align="center">电话</td>
+				      <td width="18%" align="center">??</td>
 				      <td width="32%">
 				      	<input type="text" size="25"/>
 				      </td>
@@ -50,13 +50,14 @@
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">送货方式</td>
+				      <td width="18%" height="30" align="center">????</td>
 				      <td width="32%">
-				      		<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">送货</option>
-								<option value="2">自提</option>
-							</select>
+				      		 	<optimyth:textOptionsList
+							      	style="width:"190px"
+									value="-1"
+									value="1"
+									value="2"
+						/>
 				      </td>
 				      <td width="18%" align="center">&nbsp;</td>
 				      <td width="32%">
