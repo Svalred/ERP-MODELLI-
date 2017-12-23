@@ -5,7 +5,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">仓库管理</span>
+			<span class="page_title">????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -19,11 +19,11 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">仓库名称</td>
+				      <td width="18%" height="30" align="center">????</td>
 				      <td width="32%">
 				      	<input type="text" size="25"/>
 				      </td>
-				      <td width="18%" align="center">仓库地址</td>
+				      <td width="18%" align="center">????</td>
 				      <td width="32%">
 				      	<input type="text" size="25"/>
 				      </td>
@@ -32,17 +32,18 @@
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">管理员</td>
+				      <td width="18%" height="30" align="center">???</td>
 				      <td width="32%">
-				      	<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">张三</option>
-								<option value="2">李四</option>
-							</select>
+				   	<optimyth:textOptionsList
+							      	style="width:"190px"
+									value="-1"
+									value="1"
+									value="2"
+						/>
 				      </td>
-				      <td width="18%" align="center">最大容积</td>
+				      <td width="18%" align="center">????</td>
 				      <td width="32%">
-				      	<input type="text"size="22"/>&nbsp;米<sup>3</sup>
+				      	<input type="text"size="22"/>&nbsp;?<sup>3</sup>
 				      </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
