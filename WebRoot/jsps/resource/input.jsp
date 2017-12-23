@@ -6,7 +6,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">资源管理</span>
+			<span class="page_title">????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -20,7 +20,7 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">资源名称</td>
+				      <td width="18%" height="30" align="center">????</td>
 				      <td width="82%" colspan="3">
 				      	<input type="text" size="77"/>
 				      </td>
@@ -29,28 +29,30 @@
 					  <td colspan="4">&nbsp;</td>
 					</tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td height="30" align="center">资源类别</td>
+				      <td height="30" align="center">????</td>
 				      <td>
-				      		<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">URL访问</option>
-								<option value="2">action调用</option>
-							</select>
+				      			<optimyth:textOptionsList
+							      	style="width:"190px"
+									value="-1"
+									value="1"
+									value="2"
+						/>
 					  </td>
-				      <td align="center">操作类别</td>
+				      <td align="center">????</td>
 				      <td>
-				      		<select style="width:190px">
-								<option value="-1">----请-选-择----</option>
-								<option value="1">可访问</option>
-								<option value="2">可视</option>
-							</select>
+				      			<optimyth:textOptionsList
+							      	style="width:"190px"
+									value="-1"
+									value="1"
+									value="2"
+								/>
 					  </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">资源值</td>
+				      <td width="18%" height="30" align="center">???</td>
 				      <td width="82%" colspan="3">
 				      	<input type="text" size="77"/>
 				      </td>
