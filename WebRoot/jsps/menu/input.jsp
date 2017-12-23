@@ -19,7 +19,7 @@
 <div class="content-right">
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
-			<span class="page_title">菜单管理</span>
+			<span class="page_title">????</span>
 		</div>
 	</div>
 	<div class="content-text">
@@ -33,16 +33,17 @@
 				</table>
 				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">菜单名称</td>
+				      <td width="18%" height="30" align="center">????</td>
 				      <td width="32%">
 				      	<input type="text" size="25"/>
 				      </td>
-				      <td width="18%" align="center">所属父菜单</td>
+				      <td width="18%" align="center">?????</td>
 				      <td width="32%">
-				      	<select style="width:190px">
-				      		<option>1111</option>
-				      		<option>1111</option>
-				      	</select>
+				      	<optimyth:textOptionsList
+					      	style="width:"190px"
+							1111
+							1111
+						/>
 				      </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
@@ -58,18 +59,18 @@
 				      <td colspan="4">&nbsp;</td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">角色名称</td>
+				      <td width="18%" height="30" align="center">????</td>
 				      <td width="82%" colspan="3">
-				      	<input type="checkbox" id="all">全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				      	<input type="checkbox" id="reverse">反选
+				      	<input type="checkbox" id="all">??&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				      	<input type="checkbox" id="reverse">??
 				      </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
 				      <td width="18%" height="30" align="center">&nbsp;</td>
 				      <td width="82%" colspan="3">
-				      	<input type="checkbox"/>超级管理员
-				      	<input type="checkbox"/>销售部主管
-				      	<input type="checkbox"/>销售部员工
+				      	<input type="checkbox"/>?????
+				      	<input type="checkbox"/>?????
+				      	<input type="checkbox"/>?????
 				      </td>
 				    </tr>
 				    <tr  bgcolor="#FFFFFF">
