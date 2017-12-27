@@ -42,7 +42,7 @@
 		<div class="content">
 			<div class="left">
 				<div style="margin-left:2px;">
-					<img src="images/left-top.gif" width="162" height="25" />
+					<!--<img src="images/left-top.gif" width="162" height="25" />
 				</div>
 				<div class="left-bottom">
 						<table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -139,6 +139,7 @@
 							<tr>
 								<td><a class="hei" target="main" href="store/list.jsp">&nbsp;&nbsp;&nbsp;&nbsp;仓库管理</a></td>
 							</tr>
+							-->
 						</table>
 				</div>
 				<!--"left-bottom"end-->
