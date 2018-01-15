@@ -41,3 +41,100 @@
 	str += '</table>\n';
 	return str;
 	};
+	
+
+	CalendarPrototypeGetBody = function(cal)
+	{
+	var n = 0;
+	var str = cal.getBodyBar();
+	str += '<table Author="alin" class="cdrBody" cellSpacing="2" cellPadding="0">\n';   
+	var i = 0;
+	for(i = 0; i < 7; i++)
+	{	  
+	
+    if(i<6){
+    	str += '<tr Author="alin" align="center">';
+    }
+	str = str + '<td Author="alin" class="dayOut" id="cdrDay'+(n)+'" width="13%"></td>\n';
+	n=n+1;
+	
+	str = str + '</tr>';
+	}
+	str = str + '</table>\n';
+	str = str + '<table Author="alin" class="cdrBodyBar" cellSpacing="2" cellPadding="0"><tr align="center" Author="alin"><td Author="alin" style="cursor:pointer;" onclick="'+cal.Obj+'.getToday();">今天：'+new Date().toFormatString("yyyy年mm月dd日")+'</td></tr></table>\n';
+	return str;
+	};
+	
+	
+	CalendarPrototypeGetBodyBar = function(cal)
+	{
+	var str = '<table Author="alin_bar" id="cdrBodyBar" class="cdrBodyBar" style="cursor:move;" cellSpacing="2" cellPadding="0"><tr Author="alin_bar" align="center">\n';
+	var day = new Array('日','一','二','三','四','五','六');
+	var i = 0;	
+	for(i = 0; i < 7; i++)
+	{
+	str += '<td Author="alin_bar">' + day[i] + '</td>\n';     
+	}
+	str += '</tr></table>';
+	return str;  
+	}
+	
+	CalendarPrototypeGetYearMenu = function(cal,year)
+	{
+	var str = '<table Author="alin" cellSpacing="0" class="cdrMenu" cellPadding="0">\n';
+	var i = 0;	
+	var _date;
+	var _year;
+	for(i = 0; i < 10; i++)
+	{	  
+	_year = year + i;
+	_date = new Date(_year,cal.date.getMonth(),cal.date.getDate());
+	str += '<tr Author="alin" align="center"><td Author="alin" width="13%" height="16" ';
+	if(cal.date.getFullYear() != _year)
+	{
+	str += 'onmouseover="cal.className=\'menuOver\'" onmouseout="cal.className=\'\'" ';
+	}
+	else
+	{
+	str += 'class="menuOver"';
+	}
+	str += 'onclick="' + cal.Obj + '.bindDate(\'' + _date.toFormatString("-") + '\')">' + _year + '年</td>\n';		
+	str += '</tr>';
+	}
+	str += '<tr Author="alin" align="center"><td Author="alin"><table Author="alin" style="font-size:12px;width:100%;" cellSpacing="0" cellPadding="0">\n';
+	str += '<tr Author="alin" align="center"><td Author="alin" onmouseover="cal.className=\'menuOver\'" onmouseout="cal.className=\'\'" onclick="'+cal.Obj+'.getYearMenu('+ (year - 10) + ')"><<</td>\n';
+	str += '<td Author="alin" onmouseover="cal.className=\'menuOver\'" onmouseout="cal.className=\'\'" onclick="'+cal.Obj+'.getYearMenu('+ (year + 10) +')">>></td><tr>\n';
+	str += '</table></td></tr>\n';
+	str += '</table>';
+	var _menu = getObjById("cdrMenu");
+	_menu.innerHTML = str;
+	};
+	
+	
+	
+	CalendarPrototypeGetMonthMenu = function(cal)
+	{
+	var str = '<table Author="alin" cellSpacing="0" class="cdrMenu" cellPadding="0">\n';
+	var i = 1;	
+	var _date;
+	for(i = 1; i <= 12; i++)
+	{   
+	_date = new Date(cal.date.getFullYear(),i-1,cal.date.getDate());		
+	str += '</tr><tr Author="alin" align="center"><td Author="alin" height="16" ';
+	if(cal.date.getMonth() + 1 != i)
+	{
+	str += 'onmouseover="cal.className=\'menuOver\'" onmouseout="cal.className=\'\'" ';
+	}
+	else
+	{
+	str += 'class="menuOver"';
+	}
+	str += 'onclick="' + cal.Obj + '.bindDate(\'' + _date.toFormatString("-") + '\')">'+i+'月</td></tr>\n';
+	}
+	str += '</table>';
+	var _menu = getObjById("cdrMenu");
+	_menu.innerHTML = str;   
+	};
+	
+	
+	
