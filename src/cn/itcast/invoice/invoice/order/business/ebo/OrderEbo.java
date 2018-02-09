@@ -70,6 +70,7 @@ public class OrderEbo implements OrderEbi{
 		Integer totalNum = 0;
 		Double totalPrice = 0.0d;
 		OrderDetailModel odm = new OrderDetailModel();
+		GoodsModel gm = new GoodsModel();
 		//å°†è®¢å�•æ˜Žç»†ä¿¡æ�¯ç»„ç»‡åŒ…ï¼Œä¿�å­˜
 		Set<OrderDetailModel> odms = new HashSet<OrderDetailModel>();
 		for(int i = 0;i<goodsUuids.length;i++){
@@ -86,7 +87,7 @@ public class OrderEbo implements OrderEbi{
 			odm.setSurplus(num);
 			odm.setPrice(price);
 			
-			GoodsModel gm = new GoodsModel();
+			
 			gm.setUuid(goodsUuid);
 			odm.setGm(gm);
 			//ç»‘å®šæ˜Žç»†åˆ°è®¢å�•çš„å…³ç³»
